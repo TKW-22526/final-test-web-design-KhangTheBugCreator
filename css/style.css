@@ -1,0 +1,569 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  font-size: 1.6rem;
+}
+/* ================Chung=============== */
+a {
+  text-decoration: none;
+}
+.main-content {
+  width: 1760px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: calc(100% - 48px);
+}
+.btn {
+  display: inline-block;
+  line-height: 41px;
+  border-radius: 8px;
+  background-color: #430101;
+  min-width: 127px;
+  text-align: center;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+.btn:hover {
+  cursor: pointer;
+  opacity: 90%;
+  box-shadow: 2px 2px 16px 2px #000000;
+}
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 1);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.line-clamp.line-2 {
+  -webkit-line-clamp: var(--line-clamp, 2);
+}
+.line-clamp.line-5 {
+  -webkit-line-clamp: var(--line-clamp, 5);
+}
+.break-all {
+  /* word-break: break-all; */
+  overflow-wrap: anywhere;
+}
+/* =============header============= */
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  background: url(../assets/img/espresso-surrounded-by-scattered-coffee-beans-dark-surface\ 1@2x.png);
+  background-size: cover;
+  background-position: top;
+}
+.header.fixed {
+  position: fixed;
+  /* top: -46px; */
+  z-index: 100;
+}
+.header .container {
+  padding-left: 238px;
+  padding-right: 238px;
+}
+.header .body-header {
+  display: flex;
+  align-items: center;
+  /* background-color: brown; */
+  margin-right: auto;
+  margin-left: auto;
+  /* width: 82%; */
+  padding-top: 30px;
+  padding-right: 0;
+  padding-left: 0px;
+  padding-bottom: 5px;
+}
+.header .nav {
+  margin-left: auto;
+}
+.header .nav ul {
+  display: flex;
+  align-items: center;
+}
+.header .nav a {
+  padding: 5px 20px;
+  font-size: 1.8rem;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  /* font-weight: 500; */
+  line-height: 27px;
+}
+.header .nav a:hover {
+  text-shadow: 1px 0 0 currentColor;
+}
+.header .search-box {
+  margin-left: auto;
+  border-radius: 100%;
+  min-width: 66px;
+  height: 66px;
+  position: relative;
+}
+
+.header .search-box .Round-search {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  cursor: pointer;
+  /* border: 1px solid black; */
+  box-shadow: 1px 2px 15px 5px #000000;
+  border-radius: 100%;
+}
+.header .search-box:hover {
+  box-shadow: 1px 2px 15px 8px #000000;
+}
+
+.header .search-box .search {
+  position: absolute;
+  top: 22.335px;
+  right: 15px;
+  cursor: pointer;
+}
+/* ====================hero===================== */
+.hero {
+  max-width: 100vw;
+  /* position: relative; */
+  min-height: 100vh;
+
+  /* padding-top: 100px; */
+  background: url(../assets/img/espresso-surrounded-by-scattered-coffee-beans-dark-surface\ 1@2x.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left;
+  object-fit: cover;
+  padding-top: 190px;
+  padding-left: 238px;
+  /* padding-bottom: 232px; */
+}
+.hero .container {
+  max-width: 557px;
+  /* margin-left: 238px; */
+  /* padding-top: 294px;
+  padding-bottom: 232px; */
+  /* padding-right: 1125px; */
+}
+.greeting .welcome {
+  color: white;
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+  padding-bottom: 40px;
+  font-weight: 500;
+  line-height: auto;
+  letter-spacing: 0.4rem;
+}
+.greeting .title {
+  color: white;
+  font-size: 7.2rem;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  line-height: 114%;
+  letter-spacing: 0;
+  padding-bottom: 56px;
+}
+.greeting .desc {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.8rem;
+  line-height: 144%;
+  padding-bottom: 56px;
+}
+.btn.btn-hero {
+  border-radius: 100px;
+  line-height: 55px;
+  background-color: white;
+  color: black;
+  /* font-family: "Roboto", sans-serif; */
+  /* font-family: "Open Sans", sans-serif; */
+  /* font-family: "Outfit", sans-serif; */
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  min-width: 170px;
+  font-size: 1.8rem;
+}
+/* ========================menu======================= */
+.menu {
+  background: #e2d9c8;
+}
+.menu .product-list {
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+  padding-bottom: 46.8px;
+  padding-top: 48px;
+}
+.product-list li {
+  padding: 0 75.9px;
+}
+.product-list li:last-child {
+  padding-left: 69.47px;
+}
+.product-list li a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.product-list li a img {
+  object-fit: cover;
+  /* width: 100%; */
+}
+.product-list li a p {
+  color: #544a3e;
+}
+/* ========================popular===================== */
+.popular {
+  background: #f1f0ee;
+}
+
+/* popular top */
+.popular .popular-top {
+  padding-top: 80px;
+  padding-bottom: 64px;
+}
+.popular .popular-top .title {
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  font-size: 3.2rem;
+  letter-spacing: 0.128rem;
+}
+/* popular bottom */
+.popular-bottom {
+  display: flex;
+  align-items: center;
+}
+.popular-bottom .control {
+  width: 71px;
+  right: 71px;
+  border-radius: 9999px;
+  background: #e2d9c8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.popular-bottom .control:hover {
+  cursor: pointer;
+  opacity: 91%;
+  box-shadow: 1px 2px 15px -2px #000000;
+}
+.popular-bottom .control img {
+  padding: 19px;
+}
+.popular-bottom .control.left {
+  margin-right: 70px;
+}
+.popular-bottom .control.right {
+  margin-left: 70px;
+}
+.popular-bottom .coffee-list {
+  display: flex;
+  gap: 4px;
+}
+.coffee-list .coffee-item {
+  flex: 1;
+  border: 1px solid #e4d2b3;
+  background: #e2d9c8;
+  border-radius: 18px;
+}
+.coffee-list .coffee-item:hover {
+  border: 1px solid transparent;
+  box-shadow: 0 18px 36px 0 rgba(0, 0, 0, 0.05);
+}
+.coffee-list .coffee-item .content {
+  padding: 16px;
+}
+.coffee-list .coffee-item .content a .thumb {
+  width: 100%;
+  height: 344px;
+  border-radius: 18px;
+  object-fit: cover;
+}
+
+.coffee-list .coffee-item .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 16px;
+}
+.coffee-list .coffee-item .head a h3 {
+  color: #30261c;
+  font-size: 3.8rem;
+  flex: 1;
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.coffee-list .coffee-item .head .heart-icon {
+  height: 32.83px;
+  object-fit: cover;
+  width: 100%;
+  flex: 1;
+}
+.coffee-list .coffee-item .head .heart-icon:hover {
+  cursor: pointer;
+  background: black;
+}
+.coffee-list .coffee-item .desc {
+  color: #2a0000;
+  margin-bottom: 12px;
+  font-size: 2rem;
+  line-height: 140%;
+  font-family: "Outfit", sans-serif;
+}
+.coffee-list .coffee-item .footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.coffee-list .coffee-item .footer .price {
+  color: #2a0000;
+  font-size: 2rem;
+  line-height: 150%;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+.coffee-list .coffee-item .footer .btn:hover {
+  background: #2a0000;
+}
+.popular .More {
+  padding-top: 30px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 140px;
+}
+.popular .More .btn {
+  margin-right: 0;
+  font-size: 2rem;
+  line-height: 50px;
+}
+.popular .More .btn:hover {
+  color: #430101;
+  background-color: #dec89e;
+  box-shadow: -1px 9px 17px 1px rgba(0, 0, 0, 0.89);
+}
+.popular {
+  padding-bottom: 64px;
+}
+/*================= popular 2 ===========*/
+.popular.popular2 {
+  padding-bottom: 64px;
+}
+/* ===================wall 1===================== */
+.wall1 {
+  display: flex;
+  background: #e2d9c8;
+  max-height: 335px;
+  justify-content: space-between;
+}
+.wall1 .item:first-child {
+  width: 27%;
+  object-fit: cover;
+}
+.wall1 .item:last-child {
+  width: 26.17%;
+  object-fit: cover;
+}
+/* ======================feedback=============== */
+.feedback {
+  background: #f5f5f5;
+}
+.feedback .container {
+  width: 1444px;
+  max-width: calc(100% - 50px);
+  margin-left: auto;
+  margin-right: auto;
+}
+.feedback .container .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  justify-content: center;
+  padding-top: 64px;
+  padding-bottom: 32px;
+}
+
+.feedback .container .title p {
+  text-align: center;
+}
+.feedback .container .title p:first-child {
+  font-size: 3.2rem;
+  font-family: "Reggae One", system-ui;
+  color: #30261c;
+}
+.feedback .container .title p:last-child {
+  font-size: 3.2rem;
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  letter-spacing: 0.128rem;
+}
+.feedback .container .feedback-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 85px;
+  padding-bottom: 24px;
+}
+.feedback .container .feedback-list .feedback-item {
+  width: 441px;
+  height: 235px;
+  flex: 1;
+  background: rgb(226, 217, 200, 0.4);
+  border: #dec89e 1px solid;
+  border-radius: 18px;
+}
+.feedback .feedback-item .head {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  padding-top: 28px;
+  padding-left: 28px;
+  padding-right: 4px;
+  padding-bottom: 18px;
+}
+.feedback .feedback-item .head .customer {
+  display: flex;
+
+  align-items: center;
+  gap: 12px;
+}
+.feedback .feedback-item .head .customer .info-customer .name {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #30261c;
+}
+.feedback .feedback-item .head .customer .info-customer .job {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4rem;
+  color: #30261c;
+  font-weight: 600;
+  opacity: 70%;
+}
+.feedback .feedback-item .head .customer img {
+  width: 56px;
+  height: 56px;
+  object-fit: cover;
+  border-radius: 999px;
+}
+.feedback .feedback-item .head .rating {
+  display: flex;
+  gap: 4px;
+}
+.feedback .feedback-item .head .rating img {
+  flex: 1;
+  width: 24px;
+}
+.feedback .feedback-item .body {
+  padding-bottom: 45px;
+  padding-left: 28px;
+  padding-right: 43px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 167%;
+}
+.dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding-bottom: 64px;
+}
+.dot {
+  width: 12px;
+  background: rgba(48, 38, 28, 0.5);
+  height: 12px;
+  border-radius: 999px;
+}
+.dot:hover {
+  cursor: pointer;
+}
+.dot.active {
+  background: #30261c;
+}
+
+.dot.active:hover {
+  cursor: default;
+}
+/* ==========================footer============================= */
+.footer-page {
+  background: #30261c;
+}
+
+.footer-page .container {
+  padding-top: 96px;
+  padding-right: 150px;
+  padding-left: 50px;
+  padding-bottom: 95px;
+  min-width: 1460px;
+  display: flex;
+  align-items: top;
+  justify-content: center;
+  gap: 115px;
+}
+.footer-page .logo .brand-logo {
+  width: 120px;
+  object-fit: cover;
+}
+.footer-page .columns {
+  display: flex;
+  gap: 115px;
+  align-items: center;
+}
+.footer-page .columns .item .title {
+  text-align: left;
+  font-family: "Playfair Display", serif;
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: white;
+  padding-bottom: 12px;
+}
+.footer-page .columns .item ul {
+  padding-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.footer-page .columns .item ul li a {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.8rem;
+  color: white;
+  text-align: left;
+}
+.footer-page .social {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  /* align-items: center; */
+  /* gap: 35px; */
+  align-items: top;
+}
+.footer-page .social .title {
+  color: white;
+  font-weight: 700;
+  font-size: 2.4rem;
+  font-family: "Playfair Display", serif;
+  padding-bottom: 35px;
+}
+.footer-page .social ul {
+  display: flex;
+  gap: 12px;
+}
+.footer-page .social ul li a img {
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+}

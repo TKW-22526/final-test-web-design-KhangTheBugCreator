@@ -1,0 +1,745 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- nhung font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Reggae+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>CoffeeShop</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header fixed">
+      <div class="container">
+        <div class="body-header">
+          <!-- logo coffea -->
+          <img src="./assets/icon/Coffea1.svg" alt="coffea" class="logo" />
+          <!-- nav -->
+          <nav class="nav">
+            <ul>
+              <li>
+                <a href="#">TRANG CHỦ</a>
+              </li>
+              <li>
+                <a href="./html/san-pham.html#section1">SẢN PHẨM</a>
+              </li>
+              <!-- <li>
+                <a href="#">SHOP</a>
+              </li> -->
+              <li>
+                <a href="./html/lien-he.html#section1">LIÊN HỆ</a>
+              </li>
+              <li>
+                <a href="#">ĐĂNG NHẬP</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- search-btn -->
+          <div class="search-box">
+            <img
+              src="./assets/icon/round-search.svg"
+              alt=""
+              class="Round-search"
+            />
+            <img src="./assets/icon/search-icon.svg" alt="" class="search" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- main -->
+    <main>
+      <!-- hero -->
+      <div class="hero">
+        <div class="container">
+          <div class="greeting">
+            <p class="welcome">Welcome</p>
+            <p class="title">Không chỉ là cà phê – đó là cảm hứng mỗi ngày!</p>
+            <p class="desc">
+              Cà phê rang xay nguyên chất – đánh thức năng lượng mỗi ngày.
+            </p>
+            <div class="action">
+              <a href="#!" class="btn btn-hero">Đặt Hàng</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- menu -->
+      <div class="menu">
+        <div class="main-content">
+          <ul class="product-list">
+            <li>
+              <a href="#!">
+                <img
+                  src="./assets/icon/coffee-product1.svg"
+                  alt="Hot Coffee"
+                  class="logo-product"
+                />
+                <p class="name-product">Cà Phê Nóng</p>
+              </a>
+            </li>
+            <li>
+              <a href="#!">
+                <img
+                  src="./assets/icon/coffee-product2.svg"
+                  alt="Cold Coffee"
+                  class="logo-product"
+                />
+                <p class="name-product">Cà Phê Đá</p>
+              </a>
+            </li>
+            <li>
+              <a href="#!">
+                <img
+                  src="./assets/icon/coffee-product3.svg"
+                  alt="Cup Coffee"
+                  class="logo-product"
+                />
+                <p class="name-product">Cup Coffee</p>
+              </a>
+            </li>
+            <li>
+              <a href="#!">
+                <img
+                  src="./assets/icon/coffee-product4.svg"
+                  alt="Dessert"
+                  class="logo-product"
+                />
+                <p class="name-product">Tráng Miệng</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--Popular 1 -->
+      <div class="popular">
+        <div class="main-content">
+          <!-- popular top -->
+          <div class="popular-top">
+            <p class="title">BEST SELLER</p>
+          </div>
+
+          <!--popular bottom  -->
+          <div class="popular-bottom">
+            <div class="control left">
+              <img src="./assets/icon/arrow-left.svg" alt="move-left" />
+            </div>
+            <div class="coffee-list">
+              <!-- item 1 -->
+              <div class="coffee-item">
+                <div class="content">
+                  <a href="#!">
+                    <img
+                      src="./assets/img/coffee1.png"
+                      alt="Classic Cappuccino"
+                      class="thumb"
+                    />
+                  </a>
+                  <div class="info">
+                    <!-- head -->
+                    <div class="head">
+                      <a href="#!">
+                        <h3 class="title line-clamp break-all">
+                          Classic Cappuccino
+                        </h3>
+                      </a>
+                      <span class="like">
+                        <img
+                          src="./assets/icon/heart.svg"
+                          alt="heart-icon"
+                          class="heart-icon"
+                        />
+                      </span>
+                    </div>
+                    <!-- body-desc -->
+                    <p class="desc line-clamp line-2 break-all">
+                      Classic Cappuccino là một trong những loại cà phê Ý nổi
+                      tiếng nhất trên thế giới
+                    </p>
+                    <!-- foot -->
+                    <div class="footer">
+                      <span class="price">65.000đ</span>
+                      <a href="#!" class="btn">Đặt Hàng</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- item 2 -->
+              <div class="coffee-item">
+                <div class="content">
+                  <a href="#!">
+                    <img
+                      src="./assets/img/coffee2.jpg"
+                      alt="Caramel Latte"
+                      class="thumb"
+                    />
+                  </a>
+                  <div class="info">
+                    <!-- head -->
+                    <div class="head">
+                      <a href="#!">
+                        <h3 class="title line-clamp break-all">
+                          Caramel Latte
+                        </h3>
+                      </a>
+                      <span class="like">
+                        <img
+                          src="./assets/icon/heart.svg"
+                          alt="heart-icon"
+                          class="heart-icon"
+                        />
+                      </span>
+                    </div>
+                    <!-- body-desc -->
+                    <p class="desc line-clamp line-2 break-all">
+                      Caramel Latte là một loại cà phê ngọt ngào và béo mịn
+                    </p>
+                    <!-- foot -->
+                    <div class="footer">
+                      <span class="price">70.000đ</span>
+                      <a href="#!" class="btn">Đặt Hàng</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- item 3 -->
+              <div class="coffee-item">
+                <div class="content">
+                  <a href="#!">
+                    <img
+                      src="./assets/img/coffee3.png"
+                      alt="Mocha Coffee"
+                      class="thumb"
+                    />
+                  </a>
+                  <div class="info">
+                    <!-- head -->
+                    <div class="head">
+                      <a href="#!">
+                        <h3 class="title line-clamp break-all">Mocha Coffee</h3>
+                      </a>
+                      <span class="like">
+                        <img
+                          src="./assets/icon/heart.svg"
+                          alt="heart-icon"
+                          class="heart-icon"
+                        />
+                      </span>
+                    </div>
+                    <!-- body-desc -->
+                    <p class="desc line-clamp line-2 break-all">
+                      Mocha Coffee là sự kết hợp thơm ngon giữa espresso,
+                      chocolate
+                    </p>
+                    <!-- foot -->
+                    <div class="footer">
+                      <span class="price">75.000đ</span>
+                      <a href="#!" class="btn">Đặt Hàng</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- item 4 -->
+              <div class="coffee-item">
+                <div class="content">
+                  <a href="#!">
+                    <img
+                      src="./assets/img/coffee4.png"
+                      alt="Vanilla Cold Brew"
+                      class="thumb"
+                    />
+                  </a>
+                  <div class="info">
+                    <!-- head -->
+                    <div class="head">
+                      <a href="#!">
+                        <h3 class="title line-clamp break-all">
+                          Vanilla Cold Brew
+                        </h3>
+                      </a>
+                      <span class="like">
+                        <img
+                          src="./assets/icon/heart.svg"
+                          alt="heart-icon"
+                          class="heart-icon"
+                        />
+                      </span>
+                    </div>
+                    <!-- body-desc -->
+                    <p class="desc line-clamp line-2 break-all">
+                      Vanilla Cold Brew là thức uống cà phê mát lạnh được pha
+                      bằng cách ủ cà phê trong nước lạnh suốt nhiều giờ
+                    </p>
+                    <!-- foot -->
+                    <div class="footer">
+                      <span class="price">80.000đ</span>
+                      <a href="#!" class="btn">Đặt Hàng</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="control right">
+              <img src="./assets/icon/arrow-right.svg" alt="move-right" />
+            </div>
+          </div>
+          <!-- more -->
+          <div class="More">
+            <a href="./html/san-pham.html#section1"
+              ><div class="btn">Xem Thêm...</div></a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Popular 2 (bỏ)-->
+      <div class="popular popular2" style="display: none">
+        <div class="main-content">
+          <!-- popular top -->
+          <div class="popular-top">
+            <p class="title">BEST DESSERT</p>
+          </div>
+
+          <!--popular bottom  -->
+          <div class="popular-bottom">
+            <div class="control left">
+              <img src="./assets/icon/arrow-left.svg" alt="move-left" />
+            </div>
+            <div class="coffee-list">
+              <!-- item 1 -->
+              <div class="coffee-item">
+                <div class="content">
+                  <a href="#!">
+                    <img
+                      src="./assets/img/dessert1.jpg"
+                      alt="Lungo coffee"
+                      class="thumb"
+                    />
+                  </a>
+                  <div class="info">
+                    <!-- head -->
+                    <div class="head">
+                      <a href="#!">
+                        <h3 class="title line-clamp break-all">
+                          Tên dài dài dài
+                        </h3>
+                      </a>
+                      <span class="like">
+                        <img
+                          src="./assets/icon/heart.svg"
+                          alt="heart-icon"
+                          class="heart-icon"
+                        />
+                      </span>
+                    </div>
+                    <!-- body-desc -->
+                    <p class="desc line-clamp line-2 break-all">
+                      người dùng nhập dài dài dài dài dài dài dài dài dài dài
+                      dài dài dài dài dài
+                    </p>
+                    <!-- foot -->
+                    <div class="footer">
+                      <span class="price">30.000đ</span>
+                      <a href="#!" class="btn">Đặt Hàng</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- item 2 -->
+              <div class="coffee-item">
+                <div class="content">
+                  <a href="#!">
+                    <img
+                      src="./assets/img/dessert2.jpg"
+                      alt="Lungo coffee"
+                      class="thumb"
+                    />
+                  </a>
+                  <div class="info">
+                    <!-- head -->
+                    <div class="head">
+                      <a href="#!">
+                        <h3 class="title line-clamp break-all">bánh crepe</h3>
+                      </a>
+                      <span class="like">
+                        <img
+                          src="./assets/icon/heart.svg"
+                          alt="heart-icon"
+                          class="heart-icon"
+                        />
+                      </span>
+                    </div>
+                    <!-- body-desc -->
+                    <p class="desc line-clamp line-2 break-all">
+                      hơi dài dài dài dài dài dài dài dài dài dài dài dài dài
+                      dài dài dài dài
+                    </p>
+                    <!-- foot -->
+                    <div class="footer">
+                      <span class="price">30.000đ</span>
+                      <a href="#!" class="btn">Đặt Hàng</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- item 3 -->
+              <div class="coffee-item">
+                <div class="content">
+                  <a href="#!">
+                    <img
+                      src="./assets/img/dessert3.jpg"
+                      alt="Lungo coffee"
+                      class="thumb"
+                    />
+                  </a>
+                  <div class="info">
+                    <!-- head -->
+                    <div class="head">
+                      <a href="#!">
+                        <h3 class="title line-clamp break-all">Lungo coffee</h3>
+                      </a>
+                      <span class="like">
+                        <img
+                          src="./assets/icon/heart.svg"
+                          alt="heart-icon"
+                          class="heart-icon"
+                        />
+                      </span>
+                    </div>
+                    <!-- body-desc -->
+                    <p class="desc line-clamp line-2 break-all">
+                      Một đoạn mô tả ngẫu nhiên Lorem ipsum dolor sit amet.
+                    </p>
+                    <!-- foot -->
+                    <div class="footer">
+                      <span class="price">30.000đ</span>
+                      <a href="#!" class="btn">Đặt Hàng</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- item 4 -->
+              <div class="coffee-item">
+                <div class="content">
+                  <a href="#!">
+                    <img
+                      src="./assets/img/dessert4.jpg"
+                      alt="Lungo coffee"
+                      class="thumb"
+                    />
+                  </a>
+                  <div class="info">
+                    <!-- head -->
+                    <div class="head">
+                      <a href="#!">
+                        <h3 class="title line-clamp break-all">Lungo coffee</h3>
+                      </a>
+                      <span class="like">
+                        <img
+                          src="./assets/icon/heart.svg"
+                          alt="heart-icon"
+                          class="heart-icon"
+                        />
+                      </span>
+                    </div>
+                    <!-- body-desc -->
+                    <p class="desc line-clamp line-2 break-all">
+                      Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+                    </p>
+                    <!-- foot -->
+                    <div class="footer">
+                      <span class="price">30.000đ</span>
+                      <a href="#!" class="btn">Đặt Hàng</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="control right">
+              <img src="./assets/icon/arrow-right.svg" alt="move-right" />
+            </div>
+          </div>
+          <!-- more -->
+          <div class="More">
+            <a href="#!"><div class="btn">Xem Thêm..</div></a>
+          </div>
+        </div>
+      </div>
+
+      <!--wall 1 -->
+      <div class="wall1">
+        <img
+          src="./assets/img/cai_tay_va_1_dong_ca_phe.png"
+          alt=""
+          class="item"
+        />
+        <img src="./assets/img/mot_dong_ca_phe.png" alt="" class="item" />
+      </div>
+
+      <!-- feedback -->
+      <div class="feedback">
+        <div class="container">
+          <!-- title -->
+          <div class="title">
+            <p>Đến Và Thưởng Thức</p>
+            <p>CÙNG HÀNG NGHÌN KHÁCH HÀNG ĐÃ HÀI LÒNG</p>
+          </div>
+          <!-- feedback-list -->
+          <div class="feedback-list">
+            <!-- item 1 -->
+            <div class="feedback-item">
+              <div class="head">
+                <!-- info-customer -->
+                <div class="customer">
+                  <img src="./assets/img/ava1.jpg" alt="" class="avt" />
+                  <div class="info-customer">
+                    <p class="name">Tony Stark</p>
+                    <p class="job">Engineer</p>
+                  </div>
+                </div>
+                <!-- rating -->
+                <div class="rating">
+                  <img src="./assets/icon/Empty-Star.svg" alt="" class="star" />
+                  <img
+                    src="./assets/icon/Filled-Star.svg"
+                    alt=""
+                    class="star"
+                  />
+                  <img
+                    src="./assets/icon/Filled-Star.svg"
+                    alt=""
+                    class="star"
+                  />
+                  <img
+                    src="./assets/icon/Filled-Star.svg"
+                    alt=""
+                    class="star"
+                  />
+                  <img
+                    src="./assets/icon/Filled-Star.svg"
+                    alt=""
+                    class="star"
+                  />
+                </div>
+              </div>
+              <div class="body">
+                <p class="cmt line-clamp line-5 break-all">
+                  Your coffee shop feels like the kind of place where even
+                  Jarvis would ask for a refill. Clean vibe, strong coffee,
+                  smart atmosphere. If Stark Industries had a café division,
+                  this would be the benchmark
+                </p>
+              </div>
+            </div>
+
+            <!-- item 2 -->
+            <div class="feedback-item">
+              <div class="head">
+                <!-- info-customer -->
+                <div class="customer">
+                  <img src="./assets/img/ava2.jpg" alt="" class="avt" />
+                  <div class="info-customer">
+                    <p class="name">Peter Parker</p>
+                    <p class="job">Student</p>
+                  </div>
+                </div>
+                <!-- rating -->
+                <div class="rating">
+                  <img
+                    src="./assets/icon/Filled-Star.svg"
+                    alt=""
+                    class="star"
+                  />
+                  <img
+                    src="./assets/icon/Filled-Star.svg"
+                    alt=""
+                    class="star"
+                  />
+                  <img
+                    src="./assets/icon/Filled-Star.svg"
+                    alt=""
+                    class="star"
+                  />
+                  <img
+                    src="./assets/icon/Filled-Star.svg"
+                    alt=""
+                    class="star"
+                  />
+                  <img
+                    src="./assets/icon/Filled-Star.svg"
+                    alt=""
+                    class="star"
+                  />
+                </div>
+              </div>
+              <div class="body">
+                <p class="cmt line-clamp line-5 break-all">
+                  Your coffee shop has the kind of atmosphere that makes people
+                  want to stay longer than they planned. The coffee tastes rich
+                  and carefully crafted, the environment feels warm and
+                  welcoming, and every small detail — from the lighting to the
+                  music — creates a relaxing experience. It’s not just a place
+                  to grab a drink, it’s the kind of café where ideas start,
+                  conversations last for hours, and customers keep coming back
+                  without even realizing why.
+                </p>
+              </div>
+            </div>
+
+            <!-- item 3 -->
+            <div class="feedback-item">
+              <div class="head">
+                <!-- info-customer -->
+                <div class="customer">
+                  <img src="./assets/img/ava3.png" alt="" class="avt" />
+                  <div class="info-customer">
+                    <p class="name">Dr.Strange</p>
+                    <p class="job">Neurosurgeon</p>
+                  </div>
+                </div>
+                <!-- rating -->
+                <div class="rating">
+                  <img
+                    src="./assets/icon/Filled-Star.svg"
+                    alt=""
+                    class="star"
+                  />
+                  <img
+                    src="./assets/icon/Filled-Star.svg"
+                    alt=""
+                    class="star"
+                  />
+                  <img
+                    src="./assets/icon/Filled-Star.svg"
+                    alt=""
+                    class="star"
+                  />
+                  <img
+                    src="./assets/icon/Filled-Star.svg"
+                    alt=""
+                    class="star"
+                  />
+                  <img
+                    src="./assets/icon/Filled-Star.svg"
+                    alt=""
+                    class="star"
+                  />
+                </div>
+              </div>
+              <div class="body">
+                <p class="cmt line-clamp line-5 break-all">
+                  This café carries a strangely calming energy. In a world
+                  filled with chaos, noise, and endless distractions, finding a
+                  place this peaceful feels almost magical. The coffee is
+                  refined, the atmosphere is balanced, and for a brief moment,
+                  even the multiverse seems quiet.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- control -->
+          <div class="dots">
+            <span class="dot"></span>
+            <span class="dot active"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- footer -->
+    <footer class="footer-page">
+      <div class="container">
+        <div class="logo">
+          <img src="./assets/icon/Coffee2.svg" alt="" class="brand-logo" />
+        </div>
+        <div class="columns">
+          <!-- item 1 -->
+          <div class="item">
+            <h3 class="title">NGƯỜI LÀM WEB</h3>
+            <ul>
+              <li>
+                <a href="#">Nguyễn Minh Khang</a>
+              </li>
+              <li>
+                <a href="#">Lớp: DA24TTA</a>
+              </li>
+              <li>
+                <a href="#">MSSV: 110124083</a>
+              </li>
+            </ul>
+          </div>
+          <!-- item 2 -->
+          <!-- <div class="item">
+            <h3 class="title">MÃ NGUỒN</h3>
+            <ul>
+              <li>
+                <a href="#">GitHub Repository</a>
+              </li>
+              <li>
+                <a href="#">Git</a>
+              </li>
+              <li>
+                <a href="#">Câu chuyện</a>
+              </li>
+            </ul>
+          </div> -->
+          <!-- item 3 -->
+          <div class="item">
+            <h3 class="title">THÔNG TIN</h3>
+            <ul>
+              <li>
+                <a href="#">Sđt: 0342459023</a>
+              </li>
+              <li>
+                <a href="#">Email: nmk05022006@gmail.com</a>
+              </li>
+              <li>
+                <a href="#">Địa chỉ: xã Nhị Long, tỉnh Vĩnh Long</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="social">
+          <h3 class="title">MẠNG XÃ HỘI</h3>
+          <ul>
+            <li>
+              <a href="#!"
+                ><img src="./assets/icon/X.svg" alt="X" class="social-icon"
+              /></a>
+            </li>
+            <li>
+              <a href="#!"
+                ><img
+                  src="./assets/icon/instagram.svg"
+                  alt="instagram"
+                  class="social-icon"
+              /></a>
+            </li>
+            <li>
+              <a href="#!"
+                ><img
+                  src="./assets/icon/facebook.svg"
+                  alt="facebook"
+                  class="social-icon"
+              /></a>
+            </li>
+            <li>
+              <a href="#!"
+                ><img
+                  src="./assets/icon/in.svg"
+                  alt="linkendi"
+                  class="social-icon"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

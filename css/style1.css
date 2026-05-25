@@ -1,0 +1,367 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  font-size: 1.6rem;
+}
+/* ================Chung=============== */
+a {
+  text-decoration: none;
+}
+.main-content {
+  width: 1760px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: calc(100% - 48px);
+}
+.btn {
+  display: inline-block;
+  line-height: 41px;
+  border-radius: 8px;
+  background-color: #430101;
+  min-width: 127px;
+  text-align: center;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+.btn:hover {
+  cursor: pointer;
+  opacity: 90%;
+  box-shadow: 2px 2px 16px 2px #000000;
+}
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 1);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.line-clamp.line-2 {
+  -webkit-line-clamp: var(--line-clamp, 2);
+}
+.line-clamp.line-5 {
+  -webkit-line-clamp: var(--line-clamp, 5);
+}
+.line-clamp.line-7 {
+  -webkit-line-clamp: var(--line-clamp, 7);
+}
+.break-all {
+  overflow-wrap: anywhere;
+}
+/* =============header============= */
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  background: url(../assets/img/espresso-surrounded-by-scattered-coffee-beans-dark-surface\ 1@2x.png);
+  background-size: cover;
+  background-position: top;
+}
+.header.fixed {
+  position: fixed;
+  /* top: -46px; */
+  z-index: 100;
+}
+.header .container {
+  padding-left: 238px;
+  padding-right: 238px;
+}
+.header .body-header {
+  display: flex;
+  align-items: center;
+  /* background-color: brown; */
+  margin-right: auto;
+  margin-left: auto;
+  /* width: 82%; */
+  padding-top: 30px;
+  padding-right: 0;
+  padding-left: 0px;
+  padding-bottom: 5px;
+}
+.header .nav {
+  margin-left: auto;
+}
+.header .nav ul {
+  display: flex;
+  align-items: center;
+}
+.header .nav a {
+  padding: 5px 20px;
+  font-size: 1.8rem;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  /* font-weight: 500; */
+  line-height: 27px;
+}
+.header .nav a:hover {
+  text-shadow: 1px 0 0 currentColor;
+}
+.header .search-box {
+  margin-left: auto;
+  border-radius: 100%;
+  min-width: 66px;
+  height: 66px;
+  position: relative;
+}
+
+.header .search-box .Round-search {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  cursor: pointer;
+  /* border: 1px solid black; */
+  box-shadow: 1px 2px 15px 5px #000000;
+  border-radius: 100%;
+}
+.header .search-box:hover {
+  box-shadow: 1px 2px 15px 8px #000000;
+}
+
+.header .search-box .search {
+  position: absolute;
+  top: 22.335px;
+  right: 15px;
+  cursor: pointer;
+}
+/* ====================hero===================== */
+.hero {
+  max-width: 100vw;
+  /* position: relative; */
+  min-height: 100vh;
+
+  /* padding-top: 100px; */
+  background: url(../assets/img/espresso-surrounded-by-scattered-coffee-beans-dark-surface\ 1@2x.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left;
+  object-fit: cover;
+  padding-top: 190px;
+  padding-left: 238px;
+  /* padding-bottom: 232px; */
+}
+.hero .container {
+  max-width: 557px;
+  /* margin-left: 238px; */
+  /* padding-top: 294px;
+  padding-bottom: 232px; */
+  /* padding-right: 1125px; */
+}
+.greeting .welcome {
+  color: white;
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+  padding-bottom: 40px;
+  font-weight: 500;
+  line-height: auto;
+  letter-spacing: 0.4rem;
+}
+.greeting .title {
+  color: white;
+  font-size: 7.2rem;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  line-height: 114%;
+  letter-spacing: 0;
+  padding-bottom: 56px;
+}
+.greeting .desc {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.8rem;
+  line-height: 144%;
+  padding-bottom: 56px;
+}
+.btn.btn-hero {
+  border-radius: 100px;
+  line-height: 55px;
+  background-color: white;
+  color: black;
+  /* font-family: "Roboto", sans-serif; */
+  /* font-family: "Open Sans", sans-serif; */
+  /* font-family: "Outfit", sans-serif; */
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  min-width: 170px;
+  font-size: 1.8rem;
+}
+
+/* ==========================footer============================= */
+.footer-page {
+  background: #30261c;
+}
+
+.footer-page .container {
+  padding-top: 96px;
+  padding-right: 150px;
+  padding-left: 50px;
+  padding-bottom: 95px;
+  min-width: 1460px;
+  display: flex;
+  align-items: top;
+  justify-content: center;
+  gap: 115px;
+}
+.footer-page .logo .brand-logo {
+  width: 120px;
+  object-fit: cover;
+}
+.footer-page .columns {
+  display: flex;
+  gap: 115px;
+  align-items: center;
+}
+.footer-page .columns .item .title {
+  text-align: left;
+  font-family: "Playfair Display", serif;
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: white;
+  padding-bottom: 12px;
+}
+.footer-page .columns .item ul {
+  padding-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.footer-page .columns .item ul li a {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.8rem;
+  color: white;
+  text-align: left;
+}
+.footer-page .social {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  /* align-items: center; */
+  /* gap: 35px; */
+  align-items: top;
+}
+.footer-page .social .title {
+  color: white;
+  font-weight: 700;
+  font-size: 2.4rem;
+  font-family: "Playfair Display", serif;
+  padding-bottom: 35px;
+}
+.footer-page .social ul {
+  display: flex;
+  gap: 12px;
+}
+.footer-page .social ul li a img {
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+}
+/* =================================section1========================== */
+#section1 {
+  padding: 50px;
+  scroll-margin-top: 100px;
+}
+#productList {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  justify-content: center;
+  align-content: center;
+}
+#productList .productItem {
+  width: 100%;
+  padding: 20px;
+  background: #e2d9c8;
+  border-radius: 20px;
+  font-family: "Outfit", sans-serif;
+  /* height: 700px; */
+}
+#productList .productItem:hover {
+  box-shadow: 2px 2px 16px 2px #000000;
+}
+#productList .imageProduct {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+#productList .productItem .nameProduct {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+#productList .productItem .Price {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+#productList .productItem .Price strong {
+  font-weight: bold;
+}
+#productList .productItem .desc {
+  font-size: 1.6rem;
+  line-height: 25px;
+  height: 130px;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+#section1 .btn {
+  margin-top: 20px;
+}
+#section1 .btn.edit {
+  /* margin-left: 20px; */
+}
+#productList .productItem .action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* ==================modal===================== */
+.btn.addProduct {
+  display: none;
+}
+.btn.addProduct.show {
+  display: inline-block;
+  margin-left: 20px;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal.show {
+  display: flex;
+}
+
+.modalBox {
+  width: 400px;
+  background: white;
+  padding: 24px;
+  border-radius: 16px;
+}
+
+.modalBox input,
+.modalBox textarea {
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 10px;
+}
+
+.modalBox textarea {
+  height: 120px;
+}
