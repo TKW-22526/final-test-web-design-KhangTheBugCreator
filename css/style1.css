@@ -365,3 +365,11 @@ a {
 .modalBox textarea {
   height: 120px;
 }
+#exampleUrl {
+  font-style: italic;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+#exampleUrl strong {
+  font-weight: bold;
+}
