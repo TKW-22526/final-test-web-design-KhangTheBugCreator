@@ -356,10 +356,7 @@ a {
 .popular {
   padding-bottom: 64px;
 }
-/*================= popular 2 ===========*/
-.popular.popular2 {
-  padding-bottom: 64px;
-}
+
 /* ===================wall 1===================== */
 .wall1 {
   display: flex;
