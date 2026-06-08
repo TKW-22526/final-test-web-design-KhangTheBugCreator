@@ -1,0 +1,761 @@
+/* ================= RESET RESPONSIVE CHUNG ================= */
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+.main-content {
+  width: 1760px;
+  max-width: calc(100% - 48px);
+}
+
+/* =========================================================
+   TABLET / IPAD NGANG - <= 1200px
+   ========================================================= */
+@media (max-width: 1200px) {
+  /* ---------- Header dùng chung ---------- */
+  .header .container {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+
+  .header .body-header {
+    gap: 20px;
+  }
+
+  .header .logo {
+    width: 100px;
+  }
+
+  .header .nav a {
+    padding: 5px 12px;
+    font-size: 1.5rem;
+  }
+
+  .header .search-box {
+    min-width: 52px;
+    height: 52px;
+  }
+
+  .header .search-box .search {
+    top: 16px;
+    right: 12px;
+  }
+
+  /* ---------- Hero dùng chung ---------- */
+  .hero {
+    min-height: 75vh;
+    padding-top: 155px;
+    padding-left: 56px;
+    padding-right: 56px;
+    background-position: center;
+  }
+
+  .greeting .title {
+    font-size: 5.6rem;
+  }
+
+  .greeting .desc {
+    font-size: 1.7rem;
+  }
+
+  /* ---------- Footer dùng chung ---------- */
+  .footer-page .container {
+    min-width: 0;
+    width: 100%;
+    padding: 70px 48px;
+    gap: 60px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .footer-page .columns {
+    gap: 60px;
+    flex-wrap: wrap;
+  }
+
+  /* ---------- Trang chủ ---------- */
+  .menu .product-list {
+    flex-wrap: wrap;
+    gap: 36px;
+  }
+
+  .product-list li,
+  .product-list li:last-child {
+    padding: 0;
+  }
+
+  .popular-bottom {
+    gap: 24px;
+  }
+
+  .popular-bottom .control.left {
+    margin-right: 0;
+  }
+
+  .popular-bottom .control.right {
+    margin-left: 0;
+  }
+
+  .popular-bottom .coffee-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+    width: 100%;
+  }
+
+  .coffee-list .coffee-item .content a .thumb {
+    height: 280px;
+  }
+
+  .coffee-list .coffee-item .head a h3 {
+    font-size: 3rem;
+  }
+
+  .feedback .container {
+    width: 100%;
+    max-width: calc(100% - 48px);
+  }
+
+  .feedback .container .feedback-list {
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+
+  .feedback .container .feedback-list .feedback-item {
+    width: calc(50% - 12px);
+    flex: none;
+  }
+
+  .wall1 {
+    max-width: 100%;
+  }
+
+  /* ---------- Trang sản phẩm ---------- */
+  #section1 {
+    padding: 50px 32px;
+  }
+
+  #productList {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+  }
+
+  #productList .imageProduct {
+    height: 280px;
+  }
+
+  /* ---------- Trang chi tiết ---------- */
+  .detailItem {
+    gap: 30px;
+  }
+
+  .detailImage {
+    height: 380px;
+  }
+
+  .detailContent h1 {
+    font-size: 3.4rem;
+  }
+
+  /* ---------- Trang giới thiệu ---------- */
+  .about-container {
+    width: 100%;
+    max-width: 960px;
+    padding-left: 32px;
+    padding-right: 32px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 44px;
+  }
+
+  .about-left,
+  .about-right {
+    width: 100%;
+  }
+
+  .about-left h1 {
+    font-size: 4.4rem;
+  }
+
+  .about-stats {
+    width: 100%;
+    max-width: 960px;
+    padding-left: 32px;
+    padding-right: 32px;
+    flex-wrap: wrap;
+  }
+
+  .stat-item {
+    flex: 1;
+    min-width: 260px;
+  }
+}
+
+/* =========================================================
+   TABLET ĐỨNG / IPAD NHỎ - <= 900px
+   ========================================================= */
+@media (max-width: 900px) {
+  /* ---------- Header ---------- */
+  .header.fixed {
+    position: absolute;
+  }
+
+  .header .container {
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+
+  .header .body-header {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+    gap: 18px;
+  }
+
+  .header .nav {
+    margin-left: 0;
+  }
+
+  .header .nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .header .nav a {
+    font-size: 1.4rem;
+    padding: 5px 10px;
+  }
+
+  .header .search-box {
+    display: none;
+  }
+
+  /* ---------- Hero ---------- */
+  .hero {
+    min-height: 72vh;
+    padding: 210px 32px 80px;
+  }
+
+  .hero .container {
+    max-width: 100%;
+  }
+
+  .greeting .welcome {
+    font-size: 1.7rem;
+    padding-bottom: 24px;
+  }
+
+  .greeting .title {
+    font-size: 4.4rem;
+    padding-bottom: 32px;
+  }
+
+  .greeting .desc {
+    font-size: 1.6rem;
+    padding-bottom: 36px;
+  }
+
+  .btn.btn-hero {
+    min-width: 150px;
+    line-height: 48px;
+    font-size: 1.6rem;
+  }
+
+  /* ---------- Footer ---------- */
+  .footer-page .container {
+    padding: 56px 32px;
+    gap: 40px;
+  }
+
+  .footer-page .columns {
+    gap: 40px;
+  }
+
+  /* ---------- Trang chủ ---------- */
+  .menu .product-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 36px 0;
+  }
+
+  .popular .popular-top {
+    padding-top: 56px;
+    padding-bottom: 36px;
+  }
+
+  .popular-bottom .control {
+    display: none;
+  }
+
+  .popular-bottom .coffee-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .coffee-list .coffee-item .content a .thumb {
+    height: 250px;
+  }
+
+  .coffee-list .coffee-item .head a h3 {
+    font-size: 2.7rem;
+  }
+
+  .popular .More {
+    justify-content: center;
+    padding-right: 0;
+  }
+
+  .feedback .container .title p:first-child,
+  .feedback .container .title p:last-child {
+    font-size: 2.6rem;
+  }
+
+  .feedback .container .feedback-list {
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  .feedback .container .feedback-list .feedback-item {
+    width: 100%;
+    height: auto;
+  }
+
+  /* ---------- Trang sản phẩm ---------- */
+  #productList {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  #productList .productItem .nameProduct {
+    font-size: 2.5rem;
+  }
+
+  #productList .productItem .action {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .btn.addProduct.show {
+    margin-left: 0;
+  }
+
+  /* ---------- Trang chi tiết ---------- */
+  .detailItem {
+    grid-template-columns: 1fr;
+  }
+
+  .detailImage {
+    height: 360px;
+  }
+
+  /* ---------- Trang liên hệ ---------- */
+  #section1 .contact {
+    width: 100%;
+    max-width: 680px;
+  }
+}
+
+/* =========================================================
+   ĐIỆN THOẠI - <= 600px
+   ========================================================= */
+@media (max-width: 600px) {
+  /* ---------- Header ---------- */
+  .header {
+    position: absolute;
+  }
+
+  .header.fixed {
+    position: absolute;
+  }
+
+  .header .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .header .body-header {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 14px;
+    gap: 12px;
+  }
+
+  .header .logo {
+    width: 86px;
+  }
+
+  .header .nav ul {
+    gap: 6px 8px;
+  }
+
+  .header .nav a {
+    font-size: 1.2rem;
+    padding: 4px 6px;
+    line-height: 1.4;
+  }
+
+  /* ---------- Hero ---------- */
+  .hero {
+    min-height: 82vh;
+    padding: 220px 18px 60px;
+    text-align: left;
+    background-position: center;
+  }
+
+  .greeting .welcome {
+    font-size: 1.5rem;
+    letter-spacing: 0.25rem;
+    padding-bottom: 18px;
+  }
+
+  .greeting .title {
+    font-size: 3.2rem;
+    line-height: 1.2;
+    padding-bottom: 24px;
+  }
+
+  .greeting .desc {
+    font-size: 1.45rem;
+    line-height: 1.55;
+    padding-bottom: 28px;
+  }
+
+  .btn.btn-hero {
+    min-width: 136px;
+    line-height: 44px;
+    font-size: 1.45rem;
+  }
+
+  /* ---------- Footer ---------- */
+  .footer-page .container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 44px 20px;
+    gap: 32px;
+  }
+
+  .footer-page .logo .brand-logo {
+    width: 96px;
+  }
+
+  .footer-page .columns {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 28px;
+  }
+
+  .footer-page .columns .item .title,
+  .footer-page .social .title {
+    font-size: 2rem;
+  }
+
+  .footer-page .columns .item ul li a {
+    font-size: 1.45rem;
+    line-height: 1.5;
+    word-break: break-word;
+  }
+
+  .footer-page .social ul {
+    flex-wrap: wrap;
+  }
+
+  /* ---------- Trang chủ: menu ---------- */
+  .menu .product-list {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 32px 0;
+  }
+
+  .product-list li a img {
+    max-width: 70px;
+  }
+
+  /* ---------- Trang chủ: best seller ---------- */
+  .popular .popular-top {
+    padding-top: 44px;
+    padding-bottom: 28px;
+  }
+
+  .popular .popular-top .title {
+    font-size: 2.6rem;
+  }
+
+  .popular-bottom {
+    display: block;
+  }
+
+  .popular-bottom .coffee-list {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .coffee-list .coffee-item .content a .thumb {
+    height: 230px;
+  }
+
+  .coffee-list .coffee-item .head {
+    gap: 10px;
+  }
+
+  .coffee-list .coffee-item .head a h3 {
+    font-size: 2.5rem;
+  }
+
+  .coffee-list .coffee-item .desc {
+    font-size: 1.5rem;
+  }
+
+  .coffee-list .coffee-item .footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .wall1 {
+    display: none;
+  }
+
+  /* ---------- Trang chủ: feedback ---------- */
+  .feedback .container {
+    max-width: calc(100% - 32px);
+  }
+
+  .feedback .container .title {
+    padding-top: 48px;
+    gap: 14px;
+  }
+
+  .feedback .container .title p:first-child,
+  .feedback .container .title p:last-child {
+    font-size: 2.3rem;
+  }
+
+  .feedback .feedback-item .head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .feedback .feedback-item .body p {
+    font-size: 1.45rem;
+  }
+
+  /* ---------- Trang sản phẩm ---------- */
+  #section1 {
+    padding: 36px 16px;
+    scroll-margin-top: 120px;
+  }
+
+  #productList {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  #productList .productItem {
+    padding: 16px;
+  }
+
+  #productList .imageProduct {
+    height: 230px;
+  }
+
+  #productList .productItem .nameProduct {
+    font-size: 2.4rem;
+  }
+
+  #productList .productItem .Price {
+    font-size: 1.8rem;
+  }
+
+  #productList .productItem .desc {
+    height: auto;
+    min-height: 100px;
+    font-size: 1.5rem;
+    line-height: 1.6;
+  }
+
+  #productList .productItem .action {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+
+  #productList .productItem .action .btn {
+    width: 100%;
+  }
+
+  .btn.edit,
+  .btn.addProduct.show {
+    display: block;
+    width: fit-content;
+    margin: 20px auto 0;
+  }
+
+  .modal {
+    padding: 16px;
+  }
+
+  .modalBox {
+    width: 100%;
+    max-width: 420px;
+    padding: 20px;
+  }
+
+  .modalBox h1 {
+    font-size: 2.4rem;
+  }
+
+  /* ---------- Trang chi tiết ---------- */
+  .detailItem {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .detailImage {
+    height: 260px;
+  }
+
+  .detailContent h1 {
+    font-size: 2.8rem;
+  }
+
+  .detailPrice {
+    font-size: 1.8rem;
+  }
+
+  .detailDesc {
+    font-size: 1.55rem;
+    line-height: 1.65;
+  }
+
+  /* ---------- Trang liên hệ ---------- */
+  #section1 .contact {
+    width: 100%;
+    padding: 28px 20px;
+    gap: 18px;
+    font-size: 1.55rem;
+  }
+
+  .contact h1 {
+    font-size: 2.5rem;
+    line-height: 1.3;
+  }
+
+  .contact p,
+  .contact a {
+    word-break: break-word;
+    line-height: 1.55;
+  }
+
+  /* ---------- Trang giới thiệu ---------- */
+  #section1 {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .about-container {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  .about-left,
+  .about-right {
+    width: 100%;
+  }
+
+  .about-left .sub-title {
+    font-size: 1.35rem;
+    letter-spacing: 0.18rem;
+  }
+
+  .about-left h1 {
+    font-size: 2.9rem;
+    line-height: 1.25;
+  }
+
+  .about-desc {
+    font-size: 1.5rem;
+    line-height: 1.65;
+    text-align: left;
+  }
+
+  .about-btn {
+    line-height: 46px;
+    font-size: 1.5rem;
+  }
+
+  .about-card {
+    padding: 22px;
+    border-radius: 16px;
+  }
+
+  .about-card h2 {
+    font-size: 2.4rem;
+  }
+
+  .about-card p {
+    font-size: 1.45rem;
+  }
+
+  .about-stats {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    flex-direction: column;
+    margin-top: 36px;
+    gap: 16px;
+  }
+
+  .stat-item {
+    width: 100%;
+    min-height: 118px;
+  }
+
+  .stat-item strong {
+    font-size: 3.2rem;
+  }
+
+  .stat-item span {
+    font-size: 1.45rem;
+  }
+}
+
+/* =========================================================
+   ĐIỆN THOẠI NHỎ - <= 390px
+   ========================================================= */
+@media (max-width: 390px) {
+  .header .nav a {
+    font-size: 1.1rem;
+    padding: 3px 5px;
+  }
+
+  .hero {
+    padding-top: 230px;
+  }
+
+  .greeting .title {
+    font-size: 2.8rem;
+  }
+
+  .greeting .desc {
+    font-size: 1.35rem;
+  }
+
+  .coffee-list .coffee-item .content a .thumb,
+  #productList .imageProduct {
+    height: 210px;
+  }
+
+  .about-left h1 {
+    font-size: 2.6rem;
+  }
+}
