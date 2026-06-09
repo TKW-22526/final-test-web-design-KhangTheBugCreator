@@ -82,7 +82,7 @@ const defaultProducts = [
   // },
 ];
 
-// load Default ra mot mang products de modify
+// load Default ra mot mang products de chinh sua, thay doi,...
 
 if (!localStorage.getItem("products")) {
   localStorage.setItem("products", JSON.stringify(defaultProducts));
