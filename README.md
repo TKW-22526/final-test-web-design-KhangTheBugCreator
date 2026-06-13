@@ -180,5 +180,5 @@ Mã số sinh viên: 110124083
 Lớp: DA24TTA
 Tên đề tài: Coffee Shop
 Liên kết GitHub repository: https://github.com/TKW-22526/final-test-web-design-KhangTheBugCreator
-Liên kết GitHub Pages:https://tkw-22526.github.io/final-test-web-design-KhangTheBugCreator/
+Liên kết GitHub Pages: https://tkw-22526.github.io/final-test-web-design-KhangTheBugCreator/
 ```
